@@ -2,6 +2,7 @@ package net.guh.cenezoicfauna;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.guh.cenezoicfauna.items.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,7 +13,6 @@ public class CenezoicFauna implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
 	}
 }
