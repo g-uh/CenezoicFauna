@@ -11,5 +11,8 @@ public class CenezoicFauna implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
+
+		LOGGER.info("Hello Fabric world!");
 	}
 }
