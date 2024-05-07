@@ -1,12 +1,10 @@
 package net.guh.cenezoicfauna.items;
 
-import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.guh.cenezoicfauna.CenezoicFauna;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -14,9 +12,11 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item MAMMOTHMEATBALL = registerItem("mammothmeatball", new Item(new FabricItemSettings()));
+    public static final Item COOKEDMAMMOTHMEAT = registerItem("cookedmammothmeat", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(MAMMOTHMEATBALL);
+        entries.add(COOKEDMAMMOTHMEAT);
     }
 
 
@@ -25,7 +25,7 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        CenezoicFauna.LOGGER.info("Registering Mod Items for" + CenezoicFauna.MOD_ID);
+        CenezoicFauna.LOGGER.info("Registering Mod Items for " + CenezoicFauna.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTabItemGroup);
     }
