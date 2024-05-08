@@ -12,11 +12,13 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item MAMMOTHMEATBALL = registerItem("mammothmeatball", new Item(new FabricItemSettings()));
-    public static final Item COOKEDMAMMOTHMEAT = registerItem("cookedmammothmeat", new Item(new FabricItemSettings()));
+    public static final Item DUNG = registerItem("dung", new Item(new FabricItemSettings()));
+    public static final Item AMBER = registerItem("amber", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(MAMMOTHMEATBALL);
-        entries.add(COOKEDMAMMOTHMEAT);
+        entries.add(DUNG);
+        entries.add(AMBER);
     }
 
 

@@ -1,8 +1,11 @@
 {
   "item.cenezoicfauna.mammothmeatball": "Mammoth Meatball",
-  "item.cenezoicfauna.cookedmammothmeat": "Mammoth Steak",
+  "item.cenezoicfauna.dung": "Dung",
+  "item.cenezoicfauna.amber": "Amber",
 
   "block.cenezoicfauna.dungblock": "Dung Block",
+  "block.cenezoicfauna.amberore": "Amber Ore",
+  "block.cenezoicfauna.deepslateamberore": "Deepslate Amber Ore",
 
   "itemgroup.cenezoicfauna": "Cenezoic Fauna"
 }

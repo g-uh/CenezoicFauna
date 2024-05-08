@@ -16,9 +16,13 @@ public class ModItemsGroups {
             new Identifier(CenezoicFauna.MOD_ID, "cenezoicfauna"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.cenezoicfauna"))
                     .icon(() -> new ItemStack(ModItems.MAMMOTHMEATBALL)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.COOKEDMAMMOTHMEAT);
+                        entries.add(ModItems.DUNG);
                         entries.add(ModItems.MAMMOTHMEATBALL);
+                        entries.add(ModItems.AMBER);
+
                         entries.add(ModBlocks.DUNGBLOCK);
+                        entries.add(ModBlocks.AMBERORE);
+                        entries.add(ModBlocks.DEEPSLATEAMBERORE);
 
                     }).build());
 
