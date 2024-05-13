@@ -2,7 +2,11 @@ package net.guh.cenezoicfauna;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.fabricmc.fabric.impl.object.builder.FabricEntityType;
 import net.guh.cenezoicfauna.blocks.ModBlocks;
+import net.guh.cenezoicfauna.entity.ModEntities;
+import net.guh.cenezoicfauna.entity.custom.MegalonyxEntity;
 import net.guh.cenezoicfauna.items.ModItems;
 import net.guh.cenezoicfauna.items.ModItemsGroups;
 import org.slf4j.Logger;
@@ -17,6 +21,8 @@ public class CenezoicFauna implements ModInitializer {
 		ModItemsGroups.registerItemGroups();
 
 		ModItems.registerModItems();
-		ModBlocks.registerModBlocks();
+		ModBlocks.registerModBlocks	();
+
+		FabricDefaultAttributeRegistry.register(ModEntities.MEGALONYX, MegalonyxEntity.createMegalonyxAttributes());
 	}
 }

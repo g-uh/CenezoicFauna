@@ -20,6 +20,8 @@ public class ModItemsGroups {
                         entries.add(ModItems.MAMMOTHMEATBALL);
                         entries.add(ModItems.AMBER);
 
+                        entries.add(ModItems.MEGALONYXSPAWNEGG);
+
                         entries.add(ModBlocks.DUNGBLOCK);
                         entries.add(ModBlocks.AMBERORE);
                         entries.add(ModBlocks.DEEPSLATEAMBERORE);
