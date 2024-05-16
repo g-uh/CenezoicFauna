@@ -50,7 +50,7 @@ public class ThylacineModel<T extends ThylacineEntity> extends SinglePartEntityM
         this.setHeadAngles(netHeadYaw, headPitch);
 
         this.animateMovement(ModAnimations.THYLACINEWALK, limbSwing, limbSwingAmount, 2f, 2.5f);
-        // this.updateAnimation(entity.idleAnimationState, ModAnimations.THYLACINEIDLE, ageInTicks, 1f);
+        this.updateAnimation(entity.idleAnimationState, ModAnimations.THYLACINEIDLE, ageInTicks, 1f);
 
     }
 
