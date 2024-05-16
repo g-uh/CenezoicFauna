@@ -56,13 +56,14 @@ public class MegalonyxModel<T extends MegalonyxEntity> extends SinglePartEntityM
         this.setHeadAngles(netHeadYaw, headPitch);
 
         this.animateMovement(ModAnimations.MEGALONYXWALK, limbSwing, limbSwingAmount, 2f, 2.5f);
-        //this.updateAnimation(entity.idleAnimationState, ModAnimations.MEGALONYXIDLE, ageInTicks, 1f);
+        this.updateAnimation(entity.idleAnimationState, ModAnimations.MEGALONYXIDLE, ageInTicks, 1f);
+        this.updateAnimation(entity.attackAnimationState, ModAnimations.MEGALONYXATTACK, ageInTicks, 1f);
 
     }
 
     private void setHeadAngles(float headYaw, float headPitch) {
         headYaw = MathHelper.clamp(headYaw, -30.0F, 30.0f);
-        headPitch = MathHelper.clamp(headPitch, -25.0F, 20.0f);
+        headPitch = MathHelper.clamp(headPitch, -16.0F, -7.0f);
 
         this.head.yaw = headYaw * 0.17453292f;
         this.head.pitch = headPitch * 0.17453292f;

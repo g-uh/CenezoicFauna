@@ -7,4 +7,6 @@ import net.minecraft.util.Identifier;
 public class ModModelLayers {
     public static final EntityModelLayer MEGALONYX =
             new EntityModelLayer(new Identifier(CenezoicFauna.MOD_ID, "megalonyx"), "main");
+    public static final EntityModelLayer THYLACINE =
+            new EntityModelLayer(new Identifier(CenezoicFauna.MOD_ID, "thylacine"), "main");
 }

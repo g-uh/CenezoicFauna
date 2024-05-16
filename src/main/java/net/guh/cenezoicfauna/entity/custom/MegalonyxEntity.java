@@ -1,12 +1,16 @@
 package net.guh.cenezoicfauna.entity.custom;
 
 import net.guh.cenezoicfauna.entity.ModEntities;
+import net.guh.cenezoicfauna.entity.ai.MegalonyxAttackGoal;
 import net.minecraft.entity.AnimationState;
 import net.minecraft.entity.EntityPose;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.data.DataTracker;
+import net.minecraft.entity.data.TrackedData;
+import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.PassiveEntity;
@@ -21,9 +25,14 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class MegalonyxEntity extends AnimalEntity {
+    private static final TrackedData<Boolean> ATTACKING =
+            DataTracker.registerData(MegalonyxEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
 
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
+
+    public final AnimationState attackAnimationState = new AnimationState();
+    public int attackAnimationTimeout = 0;
 
 
     public MegalonyxEntity(EntityType<? extends AnimalEntity> entityType, World world) {
@@ -37,8 +46,19 @@ public class MegalonyxEntity extends AnimalEntity {
         } else {
             --this.idleAnimationTimeout;
         }
-    }
 
+        if(this.isAttacking() && attackAnimationTimeout <= 0) {
+            attackAnimationTimeout = 40;
+            attackAnimationState.start(this.age);
+        } else {
+            --this.attackAnimationTimeout;
+        }
+
+        if(!this.isAttacking()) {
+            attackAnimationState.stop();
+        }
+
+    }
 
     @Override
     protected void updateLimbs(float posDelta) {
@@ -59,13 +79,15 @@ public class MegalonyxEntity extends AnimalEntity {
     @Override
     protected void initGoals() {
         this.goalSelector.add(0, new SwimGoal(this));
-        this.goalSelector.add(1, new MeleeAttackGoal(this, 1.0, true));
+        this.goalSelector.add(1, new MegalonyxAttackGoal(this, 1.0, true));
         this.goalSelector.add(2, new AnimalMateGoal(this, 1.0));
         this.goalSelector.add(3, new TemptGoal(this, 1.2, BREEDING_INGREDIENT, false));
         this.goalSelector.add(4, new FollowParentGoal(this, 1.25));
         this.goalSelector.add(5, new WanderAroundFarGoal(this, 1.0));
         this.goalSelector.add(6, new LookAtEntityGoal(this, PlayerEntity.class, 6.0f));
         this.goalSelector.add(7, new LookAroundGoal(this));
+
+        this.targetSelector.add(1, new RevengeGoal(this));
     }
 
     public static DefaultAttributeContainer.Builder createMegalonyxAttributes() {
@@ -74,6 +96,21 @@ public class MegalonyxEntity extends AnimalEntity {
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.3f)
                 .add(EntityAttributes.GENERIC_ARMOR, 0.2f)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 10f);
+    }
+
+    public void setAttacking(boolean attacking) {
+        this.dataTracker.set(ATTACKING, attacking);
+    }
+
+    @Override
+    public boolean isAttacking() {
+        return this.dataTracker.get(ATTACKING);
+    }
+
+    @Override
+    protected void initDataTracker() {
+        super.initDataTracker();
+        this.dataTracker.startTracking(ATTACKING, false);
     }
 
     @Override

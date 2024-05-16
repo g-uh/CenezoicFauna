@@ -24,5 +24,6 @@ public class CenezoicFauna implements ModInitializer {
 		ModBlocks.registerModBlocks	();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.MEGALONYX, MegalonyxEntity.createMegalonyxAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.THYLACINE, MegalonyxEntity.createMegalonyxAttributes());
 	}
 }
