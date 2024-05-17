@@ -2,6 +2,7 @@ package net.guh.cenezoicfauna.entity.custom;
 
 import net.guh.cenezoicfauna.entity.ModEntities;
 import net.guh.cenezoicfauna.entity.ai.MegalonyxAttackGoal;
+import net.guh.cenezoicfauna.entity.ai.MegalonyxProtectBabiesGoal;
 import net.minecraft.entity.AnimationState;
 import net.minecraft.entity.EntityPose;
 import net.minecraft.entity.EntityType;

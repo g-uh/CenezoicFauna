@@ -8,7 +8,7 @@ import net.minecraft.util.Hand;
 
 public class MegalonyxAttackGoal extends MeleeAttackGoal {
     private final MegalonyxEntity entity;
-    private int attackDelay = 10;
+    private int attackDelay = 0;
     private int ticksUntilNextAttack = 20;
     private boolean shouldCountTillNextAttack = false;
 
@@ -47,7 +47,7 @@ public class MegalonyxAttackGoal extends MeleeAttackGoal {
     }
 
     private boolean isEnemyWithinAttackDistance(LivingEntity pEnemy, double pDistToEnemySqr) {
-        return this.entity.distanceTo(pEnemy) <= 2f;
+        return pDistToEnemySqr <= this.getSquaredMaxAttackDistance(pEnemy);
     }
 
     protected void resetAttackCooldown( ) {

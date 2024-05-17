@@ -63,10 +63,10 @@ public class MegalonyxModel<T extends MegalonyxEntity> extends SinglePartEntityM
 
     private void setHeadAngles(float headYaw, float headPitch) {
         headYaw = MathHelper.clamp(headYaw, -30.0F, 30.0f);
-        headPitch = MathHelper.clamp(headPitch, -16.0F, -7.0f);
+        headPitch = MathHelper.clamp(headPitch, -25.0F, 20.0f);
 
-        this.head.yaw = headYaw * 0.17453292f;
-        this.head.pitch = headPitch * 0.17453292f;
+        this.head.yaw = headYaw * 0.01453292f;
+        this.head.pitch = headPitch * 0.01453292f;
     }
 
 

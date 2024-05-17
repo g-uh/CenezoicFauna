@@ -8,7 +8,7 @@ import net.minecraft.client.render.entity.model.SinglePartEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.MathHelper;
 
-public class ThylacineModel<T extends ThylacineEntity> extends SinglePartEntityModel<T> {
+public class    ThylacineModel<T extends ThylacineEntity> extends SinglePartEntityModel<T> {
     private final ModelPart thylacine;
     private final ModelPart head;
 
@@ -29,9 +29,9 @@ public class ThylacineModel<T extends ThylacineEntity> extends SinglePartEntityM
 
         ModelPartData Muzzle = Head.addChild("Muzzle", ModelPartBuilder.create().uv(21, 0).cuboid(-1.5F, -2.0F, -3.0F, 3.0F, 2.0F, 3.0F, new Dilation(0.0F)), ModelTransform.pivot(0.0F, 3.0F, -4.0F));
 
-        ModelPartData Left_Ear = Head.addChild("Left_Ear", ModelPartBuilder.create().uv(6, 0).cuboid(-1.0F, -2.0F, 0.0F, 2.0F, 2.0F, 0.0F, new Dilation(0.0F)), ModelTransform.pivot(2.0F, -1.0F, -1.0F));
+        ModelPartData Left_Ear = Head.addChild("Left_Ear", ModelPartBuilder.create().uv(0, 7).cuboid(-1.0F, -2.0F, -1.0F, 2.0F, 2.0F, 1.0F, new Dilation(0.0F)), ModelTransform.pivot(2.0F, -1.0F, -1.0F));
 
-        ModelPartData Right_Ear = Head.addChild("Right_Ear", ModelPartBuilder.create().uv(0, 7).cuboid(-1.0F, -2.0F, 0.0F, 2.0F, 2.0F, 0.0F, new Dilation(0.0F)), ModelTransform.pivot(-2.0F, -1.0F, -1.0F));
+        ModelPartData Right_Ear = Head.addChild("Right_Ear", ModelPartBuilder.create().uv(21, 5).cuboid(-1.0F, -2.0F, -1.0F, 2.0F, 2.0F, 1.0F, new Dilation(0.0F)), ModelTransform.pivot(-2.0F, -1.0F, -1.0F));
 
         ModelPartData Tail = Torso.addChild("Tail", ModelPartBuilder.create().uv(0, 16).cuboid(-0.5F, 0.0F, 0.0F, 1.0F, 1.0F, 11.0F, new Dilation(0.0F)), ModelTransform.pivot(0.0F, -1.5F, 2.0F));
 
@@ -58,8 +58,8 @@ public class ThylacineModel<T extends ThylacineEntity> extends SinglePartEntityM
         headYaw = MathHelper.clamp(headYaw, -30.0F, 30.0f);
         headPitch = MathHelper.clamp(headPitch, -25.0F, 20.0f);
 
-        this.head.yaw = headYaw * 0.17453292f;
-        this.head.pitch = headPitch * 0.17453292f;
+        this.head.yaw = headYaw * 0.01453292f;
+        this.head.pitch = headPitch * 0.01453292f;
     }
 
 

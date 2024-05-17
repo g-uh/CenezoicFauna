@@ -26,7 +26,7 @@ public class MegalonyxRenderer extends MobEntityRenderer<MegalonyxEntity, Megalo
         if(mobEntity.isBaby()) {
             matrixStack.scale(0.5f, 0.5f, 0.5f);
         } else {
-            matrixStack.scale(10f,1f,10f);
+            matrixStack.scale(1f,1f,1f);
         }
 
         super.render(mobEntity, f, g, matrixStack, vertexConsumerProvider, i);

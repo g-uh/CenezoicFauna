@@ -21,5 +21,12 @@ public class ModEntities {
     public static final EntityType<ThylacineEntity> THYLACINE = Registry.register(Registries.ENTITY_TYPE,
             new Identifier(CenezoicFauna.MOD_ID, "thylacine"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, ThylacineEntity::new)
-                    .dimensions(EntityDimensions.fixed(2f, 1.5f)).build());
+                    .dimensions(EntityDimensions.fixed(0.5f, 0.65f)).build());
+
+    public static void registerModEntities() {
+
+        CenezoicFauna.LOGGER.info("Registering Entities for " + CenezoicFauna.MOD_ID);
+
+    }
+
 }

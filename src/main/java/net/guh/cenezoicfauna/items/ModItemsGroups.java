@@ -12,15 +12,19 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemsGroups {
-    public final static ItemGroup CENEZOICFAUNA_GROUP = Registry.register(Registries.ITEM_GROUP,
+    public final static ItemGroup CENEZOICFAUNAGROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(CenezoicFauna.MOD_ID, "cenezoicfauna"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.cenezoicfauna"))
                     .icon(() -> new ItemStack(ModItems.MAMMOTHMEATBALL)).entries((displayContext, entries) -> {
                         entries.add(ModItems.DUNG);
                         entries.add(ModItems.MAMMOTHMEATBALL);
                         entries.add(ModItems.AMBER);
+                        entries.add(ModItems.PELT);
+
+                        entries.add(ModItems.SABRETOOTHSHIV);
 
                         entries.add(ModItems.MEGALONYXSPAWNEGG);
+                        entries.add(ModItems.THYLACINESPAWNEGG);
 
                         entries.add(ModBlocks.DUNGBLOCK);
                         entries.add(ModBlocks.AMBERORE);
