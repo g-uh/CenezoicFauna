@@ -1,9 +1,9 @@
-// 1.20.1	2024-05-17T18:47:11.3380564	cenezoic/Model Definitions
+// 1.20.1	2024-05-17T19:36:16.0148887	cenezoic/Model Definitions
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets\cenezoicfauna\models\item\megalonyx_spawn_egg.json
 7edb0c3ae824cad317c4cd99757ea49c672de384 assets\cenezoicfauna\models\block\amber_ore.json
 d223de31bec7bdede8851e8ab666e985ea2f937d assets\cenezoicfauna\models\item\mammoth_meatball.json
-dd524c5ab375d3d8487048dca1fe57fdaaebb9b4 assets\cenezoicfauna\blockstates\dung_block.json
 5d36eae12378a9e581b2c18a43b39cac38080262 assets\cenezoicfauna\blockstates\deepslate_amber_ore.json
+dd524c5ab375d3d8487048dca1fe57fdaaebb9b4 assets\cenezoicfauna\blockstates\dung_block.json
 a5c851ae2fa85c31f0193a6621f18f6a8aa021e9 assets\cenezoicfauna\blockstates\amber_ore.json
 45fa058cb8833b5cce2f57d87b84c476ce70e0bf assets\cenezoicfauna\models\item\pelt.json
 f00cc374f69735f9fbfd0ce14ef289057a101d6f assets\cenezoicfauna\models\block\dung_block.json
