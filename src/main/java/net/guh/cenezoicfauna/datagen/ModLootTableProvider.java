@@ -12,10 +12,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        addDrop(ModBlocks.DUNGBLOCK);
+        addDrop(ModBlocks.DUNG_BLOCK);
 
-        addDrop(ModBlocks.AMBERORE, oreDrops(ModBlocks.AMBERORE, ModItems.AMBER));
-        addDrop(ModBlocks.DEEPSLATEAMBERORE, oreDrops(ModBlocks.DEEPSLATEAMBERORE, ModItems.AMBER));
+        addDrop(ModBlocks.AMBER_ORE, oreDrops(ModBlocks.AMBER_ORE, ModItems.AMBER));
+        addDrop(ModBlocks.DEEPSLATE_AMBER_ORE, oreDrops(ModBlocks.DEEPSLATE_AMBER_ORE, ModItems.AMBER));
     }
 
 

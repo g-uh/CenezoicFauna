@@ -9,6 +9,8 @@ import net.guh.cenezoicfauna.entity.custom.MegalonyxEntity;
 import net.guh.cenezoicfauna.items.ModItems;
 import net.guh.cenezoicfauna.items.ModItemsGroups;
 import net.guh.cenezoicfauna.world.gen.ModEntityGeneration;
+import net.guh.cenezoicfauna.world.gen.ModOreGeneration;
+import net.guh.cenezoicfauna.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,5 +29,7 @@ public class CenezoicFauna implements ModInitializer {
 
 		FabricDefaultAttributeRegistry.register(ModEntities.MEGALONYX, MegalonyxEntity.createMegalonyxAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.THYLACINE, MegalonyxEntity.createMegalonyxAttributes());
+
+		ModWorldGeneration.generateModWorldGen();
 	}
 }

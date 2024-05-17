@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_deepslateamberore": {
+    "has_amber": {
       "conditions": {
         "items": [
           {
             "items": [
-              "cenezoicfauna:deepslateamberore"
+              "cenezoicfauna:amber"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:amber_from_blasting_deepslateamberore"
+        "recipe": "minecraft:sabretooth_shiv"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_deepslateamberore",
+      "has_amber",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:amber_from_blasting_deepslateamberore"
+      "minecraft:sabretooth_shiv"
     ]
   },
   "sends_telemetry_event": false

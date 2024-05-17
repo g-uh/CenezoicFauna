@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "cenezoicfauna:block/amberore"
+    "all": "cenezoicfauna:block/dung_block"
   }
 }

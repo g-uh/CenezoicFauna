@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dungblock": {
+    "has_dung_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "cenezoicfauna:dungblock"
+              "cenezoicfauna:dung_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_dungblock",
+      "has_dung_block",
       "has_the_recipe"
     ]
   ],

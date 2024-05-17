@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "cenezoicfauna:item/mammothmeatball"
+    "layer0": "cenezoicfauna:item/mammoth_meatball"
   }
 }

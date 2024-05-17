@@ -1,9 +1,9 @@
-// 1.20.1	2024-05-16T21:41:24.9241285	cenezoic/Tags for minecraft:block
+// 1.20.1	2024-05-17T18:47:11.343056	cenezoic/Tags for minecraft:block
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\need_tool_level_4.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\mineable\hoe.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\mineable\axe.json
-e21eec5a9b2b0e0c5389f98e1b7c1b09ed8a4e3a data\minecraft\tags\blocks\mineable\pickaxe.json
+481bc30112e13c28900213321e2e15b9bb2b8bf1 data\minecraft\tags\blocks\mineable\pickaxe.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_stone_tool.json
-ac5ac7003ba0e0ac25119362c99429f31c576447 data\minecraft\tags\blocks\mineable\shovel.json
+3831c1ee208f1d856b6381f656a3db1874179a84 data\minecraft\tags\blocks\mineable\shovel.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_diamond_tool.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_iron_tool.json

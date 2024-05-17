@@ -19,22 +19,22 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATEAMBERORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AMBERORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DUNGBLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_AMBER_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AMBER_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DUNG_BLOCK);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.MAMMOTHMEATBALL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MAMMOTH_MEATBALL, Models.GENERATED);
         itemModelGenerator.register(ModItems.AMBER, Models.GENERATED);
         itemModelGenerator.register(ModItems.DUNG, Models.GENERATED);
         itemModelGenerator.register(ModItems.PELT, Models.GENERATED);
-        itemModelGenerator.register(ModItems.SABRETOOTHSHIV, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SABRETOOTH_SHIV, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.MEGALONYXSPAWNEGG,
+        itemModelGenerator.register(ModItems.MEGALONYX_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
-        itemModelGenerator.register(ModItems.THYLACINESPAWNEGG,
+        itemModelGenerator.register(ModItems.THYLACINE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
 
     }

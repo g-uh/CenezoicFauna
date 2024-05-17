@@ -12,23 +12,23 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemsGroups {
-    public final static ItemGroup CENEZOICFAUNAGROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(CenezoicFauna.MOD_ID, "cenezoicfauna"),
+    public final static ItemGroup CENEZOIC_FAUNA_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(CenezoicFauna.MOD_ID, "cenezoic_fauna"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.cenezoicfauna"))
-                    .icon(() -> new ItemStack(ModItems.MAMMOTHMEATBALL)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.MAMMOTH_MEATBALL)).entries((displayContext, entries) -> {
                         entries.add(ModItems.DUNG);
-                        entries.add(ModItems.MAMMOTHMEATBALL);
+                        entries.add(ModItems.MAMMOTH_MEATBALL);
                         entries.add(ModItems.AMBER);
                         entries.add(ModItems.PELT);
 
-                        entries.add(ModItems.SABRETOOTHSHIV);
+                        entries.add(ModItems.SABRETOOTH_SHIV);
 
-                        entries.add(ModItems.MEGALONYXSPAWNEGG);
-                        entries.add(ModItems.THYLACINESPAWNEGG);
+                        entries.add(ModItems.MEGALONYX_SPAWN_EGG);
+                        entries.add(ModItems.THYLACINE_SPAWN_EGG);
 
-                        entries.add(ModBlocks.DUNGBLOCK);
-                        entries.add(ModBlocks.AMBERORE);
-                        entries.add(ModBlocks.DEEPSLATEAMBERORE);
+                        entries.add(ModBlocks.DUNG_BLOCK);
+                        entries.add(ModBlocks.AMBER_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_AMBER_ORE);
 
                     }).build());
 

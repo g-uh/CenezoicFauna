@@ -10,16 +10,15 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
-    public static final Block DUNGBLOCK = registerBlock("dungblock" ,
+    public static final Block DUNG_BLOCK = registerBlock("dung_block" ,
             new Block(FabricBlockSettings.copyOf(Blocks.MUD)));
-    public static final Block AMBERORE = registerBlock("amberore",
+    public static final Block AMBER_ORE = registerBlock("amber_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.IRON_ORE).strength(2f), UniformIntProvider.create(5, 8)));
-    public static final Block DEEPSLATEAMBERORE = registerBlock("deepslateamberore",
+    public static final Block DEEPSLATE_AMBER_ORE = registerBlock("deepslate_amber_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE).strength(3.5f), UniformIntProvider.create(7, 10)));
 
     private static Block registerBlock(String name, Block block) {

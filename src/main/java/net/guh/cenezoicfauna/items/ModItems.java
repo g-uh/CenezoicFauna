@@ -11,8 +11,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item MAMMOTHMEATBALL = registerItem("mammothmeatball",
-            new Item(new FabricItemSettings().food(ModFoodComponents.MAMMOTHMEATBALL)));
+    public static final Item MAMMOTH_MEATBALL = registerItem("mammoth_meatball",
+            new Item(new FabricItemSettings().food(ModFoodComponents.MAMMOTH_MEATBALL)));
     public static final Item DUNG = registerItem("dung",
             new Item(new FabricItemSettings()));
     public static final Item AMBER = registerItem("amber",
@@ -20,12 +20,12 @@ public class ModItems {
     public static final Item PELT = registerItem("pelt",
             new Item(new FabricItemSettings()));
 
-    public static final Item SABRETOOTHSHIV = registerItem("sabretoothshiv",
+    public static final Item SABRETOOTH_SHIV = registerItem("sabretooth_shiv",
             new SwordItem(ModToolMaterial.SABRETOOTH, 5, 1, new FabricItemSettings()));
 
-     public static final Item MEGALONYXSPAWNEGG = registerItem("megalonyxspawnegg",
+    public static final Item MEGALONYX_SPAWN_EGG = registerItem("megalonyx_spawn_egg",
             new SpawnEggItem(ModEntities.MEGALONYX, 0xc9a374, 0xd8c391, new FabricItemSettings()));
-     public static final Item THYLACINESPAWNEGG = registerItem("thylacinespawnegg",
+    public static final Item THYLACINE_SPAWN_EGG = registerItem("thylacine_spawn_egg",
             new SpawnEggItem(ModEntities.THYLACINE, 0xd3a45d0, 0x382312, new FabricItemSettings()));
 
 

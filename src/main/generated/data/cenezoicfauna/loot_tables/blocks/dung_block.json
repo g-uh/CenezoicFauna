@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "cenezoicfauna:dungblock"
+          "name": "cenezoicfauna:dung_block"
         }
       ],
       "rolls": 1.0

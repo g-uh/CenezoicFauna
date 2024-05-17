@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dung": {
+    "has_amber_ore": {
       "conditions": {
         "items": [
           {
             "items": [
-              "cenezoicfauna:dung"
+              "cenezoicfauna:amber_ore"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:dungblock"
+        "recipe": "minecraft:amber_from_blasting_amber_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_dung",
+      "has_amber_ore",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:dungblock"
+      "minecraft:amber_from_blasting_amber_ore"
     ]
   },
   "sends_telemetry_event": false
