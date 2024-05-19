@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "cenezoic",
+	"id": "cenozoicfauna",
 	"version": "${version}",
 	"name": "cenezoic",
 	"description": "This is an example description! Tell everyone what your mod is about!",
@@ -16,20 +16,20 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.guh.cenezoicfauna.CenezoicFauna"
+			"net.guh.cenozoicfauna.CenozoicFauna"
 		],
 		"client": [
-			"net.guh.cenezoicfauna.CenezoicFaunaClient"
+			"net.guh.cenozoicfauna.CenozoicFaunaClient"
 		],
 		"fabric-datagen": [
-			"net.guh.cenezoicfauna.CenezoicFaunaDataGenerator"
+			"net.guh.cenozoicfauna.CenozoicFaunaDataGenerator"
 		],
 		"rei_client": [
-			"net.guh.cenezoicfauna.compat.CenezoicFaunaREIClientPlugin"
+			"net.guh.cenozoicfauna.compat.CenozoicFaunaREIClientPlugin"
 		]
 	},
 	"mixins": [
-		"cenezoicfauna.mixins.json"
+		"cenozoicfauna.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.11",

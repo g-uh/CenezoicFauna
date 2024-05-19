@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "cenezoicfauna:amber_ore",
-    "cenezoicfauna:deepslate_amber_ore"
+    "cenozoicfauna:amber_ore",
+    "cenozoicfauna:deepslate_amber_ore"
   ]
 }

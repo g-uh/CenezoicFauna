@@ -1,0 +1,21 @@
+{
+  "item.cenozoicfauna.mammothmeatball": "Mammoth Meatball",
+  "item.cenozoicfauna.dung": "Dung",
+  "item.cenozoicfauna.amber": "Amber",
+  "item.cenozoicfauna.pelt": "Pelt",
+
+  "item.cenozoicfauna.sabretoothshiv": "Sabretooth Shiv",
+
+  "item.cenozoicfauna.megalonyxspawnegg": "Megalonyx Spawn Egg",
+  "item.cenozoicfauna.thylacinespawnegg": "Thylacine Spawn Egg",
+
+  "item.cenozoicfauna.megalonyx": "Megalonyx",
+  "item.cenozoicfauna.thylacine": "Thylacine",
+  "item.cenozoicfauna.smilodon": "Smilodon",
+
+  "block.cenozoicfauna.dung_block": "Dung Block",
+  "block.cenozoicfauna.amber_ore": "Amber Ore",
+  "block.cenozoicfauna.deep_slate_amber_ore": "Deepslate Amber Ore",
+
+  "itemgroup.cenozoicfauna": "Cenozoic Fauna"
+}
